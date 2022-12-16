@@ -51,7 +51,7 @@
     "fix": "eslint --fix .",
     "build": "microbundle {stream,twitter}.js && bundlesize",
     "test": "jest --detectOpenHandles",
-    "release": "npm run -s build && npm run lint && npm test && git tag $npm_package_version && git push && git push --tags && npm publish",
+    "release": "npm run -s build && npm run lint && npm test && npm publish",
     "prepare": "husky install"
   },
   "jest": {
